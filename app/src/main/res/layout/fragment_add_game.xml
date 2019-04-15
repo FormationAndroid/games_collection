@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
+              android:orientation="vertical"
              tools:context=".fragments.AddGameFragment">
 
-    <TextView
+    <EditText
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="ADD GAME"/>
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:id="@+id/editName"/>
 
-</FrameLayout>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Year"
+            android:id="@+id/editYear"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Console"
+            android:id="@+id/editConsole"/>
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Max players"
+            android:id="@+id/editMaxPlayers"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAddGame"
+            android:text="Add game"/>
+
+</LinearLayout>
